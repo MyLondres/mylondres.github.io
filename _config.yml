@@ -1,0 +1,8 @@
+# theme: jekyll-theme-minimal
+name: MyLondres
+title: MyLondres
+strapline: "Internship in London"
+description: "Bienvenue sur le site de Mylondres.com. Ce site vous regroupe toutes les informations sur Londres."
+site_path: https://mylondres.github.io/
+include: ['_pages']
+relative_permalinks: false
