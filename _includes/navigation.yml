@@ -1,2 +1,14 @@
  - title: Home
    url: /
+ - title: Nos logements
+   url: /nos-services/
+ - title: Contact
+   url: /contact/
+ - title: Blog
+   url: /blog/
+ - title: Interests
+   url: /interests/
+ - title: Projects
+   url: /projects/
+ - title: 404 Error
+   url: /*

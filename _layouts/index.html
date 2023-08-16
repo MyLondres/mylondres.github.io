@@ -6,17 +6,16 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div id="page" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         {% include header.html %}
 
-        <main class="p-5 m-5 rounded shadow-lg">
-            <h3 class="text-uppercase display-4 mb-0 pb-0">{{ site.title }}</h3>
-            <h1 class="text-uppercase display-1 pt-0">
-                <img class="svg-img-fluid" src="assets/ml-logo.svg" height="70" title="{{ site.name }}">
-            </h1>
-            <h6 class="text-uppercase fs-2 fw-lighter">{{ site.strapline }}</h6>
+        <main class="p-5 m-5 rounded shadow-sm">
+
+            <div id="page_content"></div>
+
+            <!-- <h6 class="text-uppercase fs-2 fw-lighter">{{ site.strapline }}</h6> -->
             <p class="lead">
-                {{ content }}  
+                {{ content }} 
             </p>
 
                 <p class="lh-sm fs-5 fw-lighter">
@@ -37,6 +36,8 @@
         {% include footer.html %}
     </div>
 
+
+    
 </body>
 
 </html>

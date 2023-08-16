@@ -1,0 +1,320 @@
+{
+    "mainmenu": [
+        {
+            "nos-services": [
+                {
+                    "title": "Nos logements",
+                    "slug": "/nos-services"
+                },
+                {
+                    "title": "Nos logements",
+                    "slug": "/nos-services"
+                },
+                {
+                    "title": "Cours d'anglais",
+                    "slug": "/nos-services/cours-d-anglais"
+                },
+                {
+                    "title": "Stages",
+                    "slug": "/nos-services/stages"
+                },
+                {
+                    "title": "Transfert",
+                    "slug": "/nos-services/transfert"
+                },
+                {
+                    "title": "Préparation CV & Entretiens",
+                    "slug": "/nos-services/préparation-cv-and-entretiens"
+                },
+                {
+                    "title": "Liste des annonces",
+                    "slug": "/nos-services/liste-des-annonces"
+                }
+            ],
+            "logement": [
+                {
+                    "title": "Logement",
+                    "slug": "/logement"
+                },                
+                {
+                    "title": "Logement",
+                    "slug": "/logement"
+                },
+                {
+                    "title": "Nos locations",
+                    "slug": "/logement/nos-locations"
+                },
+                {
+                    "title": "Type de logement",
+                    "slug": "/logement/type-de-logement"
+                },
+                {
+                    "title": "Proposer un logement",
+                    "slug": "/logement/proposer-un-logement"
+                },
+                {
+                    "title": "Conseils",
+                    "slug": "/logement/conseils"
+                },
+                {
+                    "title": "Infos Utiles",
+                    "slug": "/logement/infos-utiles"
+                },
+                {
+                    "title": "Sécurité",
+                    "slug": "/logement/sécurité"
+                }
+            ],
+            "transport": [
+                {
+                    "title": "Transport",
+                    "slug": "/transport"
+                },
+                {
+                    "title": "Transport",
+                    "slug": "/transport"
+                },
+                {
+                    "title": "Aeroport",
+                    "slug": "/transport/aeroport"
+                },
+                {
+                    "title": "Se Deplacer En Voiture",
+                    "slug": "/transport/se-deplacer-en-voiture"
+                },
+                {
+                    "title": "Trouver Son Itineraire",
+                    "slug": "/transport/trouver-son-itineraire"
+                },
+                {
+                    "title": "Voyager En Bus",
+                    "slug": "/transport/voyager-en-bus"
+                },
+                {
+                    "title": "Voyager En Metro",
+                    "slug": "/transport/voyager-en-metro"
+                },
+                {
+                    "title": "Voyager En Taxi",
+                    "slug": "/transport/voyager-en-taxi"
+                },
+                {
+                    "title": "Voyageurs Handicapes",
+                    "slug": "/transport/voyageurs-handicapes"
+                }
+            ],
+            "etudier": [
+                {
+                    "title": "Etudier",
+                    "slug": "/etudier"
+                },                
+                {
+                    "title": "Etudier",
+                    "slug": "/etudier"
+                },
+                {
+                    "title": "Aeroport",
+                    "slug": "/etudier/aeroport"
+                },
+                {
+                    "title": "Infos Utiles",
+                    "slug": "/etudier/infos-utiles"
+                },
+                {
+                    "title": "S'inscrire à l Université",
+                    "slug": "/etudier/s-inscrire-à-l-université"
+                },
+                {
+                    "title": "Cours D'Anglais",
+                    "slug": "/etudier/Cours-d-anglais"
+                },
+                {
+                    "title": "Liens Utiles",
+                    "slug": "/etudier/liens-utiles"
+                },
+                {
+                    "title": "Convertir Ses Diplomes",
+                    "slug": "/etudier/convertir-ses-diplomes"
+                },
+                {
+                    "title": "School League Table",
+                    "slug": "/etudier/school-league-table"
+                }
+            ],
+            "emploi": [
+                {
+                    "title": "Emploi",
+                    "slug": "/emploi"
+                },
+                {
+                    "title": "Emploi",
+                    "slug": "/emploi"
+                },
+                {
+                    "title": "Nos Offres",
+                    "slug": "/emploi/nos-offres"
+                },
+                {
+                    "title": "Proposer une Offre",
+                    "slug": "/emploi/proposer-une-offre"
+                },
+                {
+                    "title": "Agence de Recrutement",
+                    "slug": "/emploi/agence-de-recrutement"
+                },
+                {
+                    "title": "Conseils",
+                    "slug": "/emploi/conseils"
+                },
+                {
+                    "title": "Corps Professionnel",
+                    "slug": "/emploi/corps-professionnel"
+                },
+                {
+                    "title": "Les Impots et Taxes",
+                    "slug": "/emploi/les-impots-et-taxes"
+                },
+                {
+                    "title": "National Insurance Number",
+                    "slug": "/emploi/national-insurance-number"
+                }
+            ],
+            "tourisme": [
+                {
+                    "title": "Tourisme",
+                    "slug": "/tourisme"
+                },
+                {
+                    "title": "Tourisme",
+                    "slug": "/tourisme"
+                },
+                {
+                    "title": "Evenements",
+                    "slug": "/tourisme/evenements"
+                },
+                {
+                    "title": "Eviter La Foule",
+                    "slug": "/tourisme/eviter-la-foule"
+                },
+                {
+                    "title": "Infos Pratiques",
+                    "slug": "/tourisme/infos-pratiques"
+                },
+                {
+                    "title": "Les Affaires a Londres",
+                    "slug": "/tourisme/les-affaires-a-londres"
+                },
+                {
+                    "title": "Les Concerts Gratuits",
+                    "slug": "/tourisme/les-concerts-gratuits"
+                },
+                {
+                    "title": "Les Marches",
+                    "slug": "/tourisme/les-marches"
+                },
+                {
+                    "title": "Les Musee Gratuits",
+                    "slug": "/tourisme/les-musee-gratuits"
+                },
+                {
+                    "title": "Les Parc et Jardins",
+                    "slug": "/tourisme/les-parc-et-jardins"
+                },
+                {
+                    "title": "Shopping",
+                    "slug": "/tourisme/shopping"
+                }
+            ],
+            "sante": [
+                {
+                    "title": "Sante",
+                    "slug": "/sante"
+                },
+                {
+                    "title": "Sante",
+                    "slug": "/sante"
+                },
+                {
+                    "title": "Médecin Gérénaliste",
+                    "slug": "/sante/médecin-gérénaliste"
+                },
+                {
+                    "title": "Carte Ehic",
+                    "slug": "/sante/carte-ehic"
+                },
+                {
+                    "title": "Les Medicaments",
+                    "slug": "/sante/les-medicaments"
+                },
+                {
+                    "title": "Médecin Français",
+                    "slug": "/sante/médecin-français"
+                }
+            ],
+            "formalite": [
+                {
+                    "title": "Formalite",
+                    "slug": "/formalite"
+                },
+                {
+                    "title": "Formalite",
+                    "slug": "/formalite"
+                },
+                {
+                    "title": "Banque et Communication",
+                    "slug": "/formalite/banque-et-communication"
+                },
+                {
+                    "title": "Avoir une Ligne Telephonique",
+                    "slug": "/formalite/avoir-une-ligne-telephonique"
+                },
+                {
+                    "title": "Police et Securite",
+                    "slug": "/formalite/police-et-securite"
+                },
+                {
+                    "title": "Paiements Par Internet",
+                    "slug": "/formalite/paiements-par-internet"
+                },
+                {
+                    "title": "Forum",
+                    "slug": "/formalite/forum"
+                },
+                {
+                    "title": "Discussion en direct avec d'autres français sur Londres & annonces personnelles",
+                    "slug": "/formalite/discussion-en-direct-avec-d-autres-français-sur-Londres-and-annonces-personnelles"
+                }
+            ],
+            "annonces": [
+                {
+                    "title": "Annonces",
+                    "slug": "/annonces"
+                },
+                {
+                    "title": "Liste des annonces",
+                    "slug": "/annonces/liste-des-annonces"
+                },
+                {
+                    "title": "Avoir une Ligne Telephonique",
+                    "slug": "/annonces/les-bons-plans"
+                },
+                {
+                    "title": "Proposez une annonce",
+                    "slug": "/annonces/proposez-une-annonce"
+                },
+                {
+                    "title": "Restaurants bon Marché",
+                    "slug": "/annonces/restaurants-bon-marché"
+                },
+                {
+                    "title": "Boites de Nuits",
+                    "slug": "/annonces/boites-de-nuits"
+                },
+                {
+                    "title": "Bars and pubs",
+                    "slug": "/annonces/bar-and-pubs"
+                }
+            ]
+        }
+    ]
+}

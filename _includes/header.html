@@ -1,40 +1,150 @@
-<header class="mb-auto">
-    <div>
-        <h3 class="float-md-start mb-0 fw-bold">            
-            <a class="text-dark text-decoration-none text-uppercase" href="{{ site.site_path }}" title="{{ site.name }}">
-                <img class="svg-img-fluid" src="assets/ml-logo.svg" height="64">
+<header class="mb-3">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="{% include mainurl.html %}/" title="{{ site.name }}">
+                <img class="d-inline-block align-text-top svg-img-fluid" src="assets/img/head_logo_brand.svg" width="54" height="54" alt="Logo">
             </a>
-        </h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        {%- if site.data.global.navigation -%}
 
-            {%- assign navigation = site.data.global.navigation -%}
+            <div class="d-flex justify-content-end">
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control form-control-lg rounded-1 me-2 pr-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="d-flex">
+                    <a class="btn btn-secondary rounded-1" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
+                </div>
+                
 
-        {%- else -%}
+            </div>
 
-            {%- assign navigation = '' | split: ',' -%}
+        </div>
+    </nav>
 
-            {%- capture nav_data -%}
-            {%- include navigation.yml -%}
-            {%- endcapture -%}
+    <div>
+        <div class="offcanvas offcanvas-start overflow-hidden" tabindex="-1" id="offcanvasMenu" data-bs-scroll="true" data-bs-backdrop="static" aria-labelledby="offcanvasMenuLabel">
 
-            {%- assign nav_array = nav_data | split: ' - ' %}
 
-            {%- for nav_item in nav_array -%}
 
-                {%- if nav_item != '' -%}
+            <div class="menu-tabs container text-center p-0 pt-3">
+                <div class="row m-0">
+                    <ul class="tabs nav nav-tabs border-0 p-0">
+                        <li class="nav-item col-4">
+                            <a href="#menu" class="text-dark icon-link fs-5 fw-light text-decoration-none pb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>                            
+                                Menu
+                            </a>
+                        </li>
+                        <li class="nav-item col-4">
+                            <a href="#socials" class="text-dark icon-link fs-5 fw-light text-decoration-none pb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                </svg>
+                                Socials
+                            </a>
+                        </li>
+                        <li class="nav-item col-4">
+                            <a href="#cart" class="text-dark icon-link fs-5 fw-light text-decoration-none pb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                                Cart
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
 
-                    {%- assign nav_cleaned = nav_item | strip | replace: 'title: ', '' | replace: '   url: ', '' -%}
-                    {%- assign navigation = navigation | push: nav_cleaned -%}
+                <section class="tab_content_wrapper container-fluid">
 
-                {%- endif -%}
 
-            {%- endfor -%}
-        {%- endif -%}
-        <!-- <a class="nav-link fw-bold py-1 px-0 active text-dark" aria-current="page" href="/home.html">Home</a> -->
-      </nav>
+
+                    <article class="tab_content h-100 col-12" id="menu">
+                        <div class="offcanvas-body align-text-start col-12 px-0" style="position: fixed; text-align: left;left:0;">
+                            <nav id="main-menu" class="nav flex-column "></nav>
+                        </div>
+                    </article>
+
+                    <article class="tab_content" id="socials">
+                        <p>Social Media conversa egens spectent tum sed diremit haec. Dei cinxit zephyro media congeriem septemque rudis. Terrae nubes utramque opifex diu magni reparabat meis nam. Turba habendum. Onus animal est pondere. Foret dedit obsistitur. Tenent homo caligine humanas sanctius dicere sive addidit. Ignea sibi. Aberant mundi iners dispositam altae orbis fronde iunctarum nubibus. Ante parte. Quisquis tractu diu. Iudicis dominari frigida origo surgere fabricator. <a href="#tab4">Social media</a>  piscibus figuras speciem evolvit ulla obstabatque cuncta. Omni grandia terrenae pugnabant pondus quisque orbis ultima.</p>
+                        <p>Social Media calidis mundum caligine coeperunt. Descenderat regat prima dissaepserat humanas tonitrua orbem bracchia. Principio galeae sole. Margine postquam evolvit eodem auroram uno omni ille secrevit regat.Coeptis undae traxit certis secrevit campoque liquidum margine gravitate. Animus convexi origine terrae cesserunt. Tumescere natus proximus lacusque. Otia faecis tonitrua erat hominum aliis radiis moles.</p>
+                    </article>
+
+                    <article class="tab_content" id="cart">
+                        <p>Copyright eurus supplex undae fulgura congestaque locis. Gravitate ante nabataeaque sua naturae satus ad. <a href="#tab2">Copyright</a> madescit pugnabant effervescere abscidit altae. Parte norant principio vultus reparabat omni rapidisque.</p>
+                        <p>Copyright flamma erectos tempora sorbentur illas foret ambitae. Sata locavit triones. Terrarum tuti diversa formas diffundi prima quod regio premuntur. Ipsa pluviaque toto valles conversa quinta.</p>
+                    </article>
+
+                </section>
+            </div>
+
+
+            
+        </div>
     </div>
-  </header>
+</header>
 
+<script>
+document.addEventListener("click", function (evnt) {
+                var anchor = evnt.target.closest('a[href="#/"]');
+                if (anchor) {
+                    alert("Thank you for clicking, but that's a demo link.");
+                    evnt.preventDefault();
+                }
+            });
+
+
+    fetch('./_data/mainmenu.json')
+      .then(response => response.json())
+      .then(data => {
+        
+        const navElem = document.getElementById("main-menu");
+        
+        Object.entries(data).forEach(element => {
+
+            const menu_items = element[1][0];
+            Object.entries(menu_items).forEach(menuElement => {
+
+                var menu_header = _.toString(_.toLower(menuElement[0]))
+                var collapseHeader = "collapse-menu-"+menu_header;
+
+                navElem.innerHTML += `
+                <a class="btn-link text-decoration-none text-dark fs-4 border-bottom border-2 pb-2 pt-2 ps-3" data-bs-toggle="collapse" href="#`+ collapseHeader +`" role="button" aria-expanded="false" aria-controls="`+ collapseHeader +`">
+                    <h4 class="pt-3 mb-0">`+ _.startCase(menu_header) +`</h4>
+                </a>
+                `; 
+                navElem.innerHTML += `<div class="collapse p-0" id="`+ collapseHeader +`"  data-bs-parent="#offcanvasMenu"></div>`;
+                for (let i = 0; i < menuElement.length; i++) {
+                    const nav_elem = menuElement[i];
+
+                    async function collapseFunction() {
+                        
+                        for (let j = 0; j < nav_elem.length; j++) {
+
+                            const navElement = await document.getElementById(collapseHeader);
+                            const li_element = nav_elem[j];
+                            let nav_title = li_element.title
+                            let nav_slug = li_element.slug
+                            if (nav_title !== undefined) {
+                                console.log(li_element.slug);
+                                navElement.innerHTML += `
+                                <a class="nav-link ps-0 border-bottom border-2 pb-2 pt-2 fs-4 text-dark ps-3" aria-current="page" href="#`+ nav_slug +`">
+                                    `+nav_title+`
+                                </a>`; 
+                            }
+                        }
+                    }
+                    collapseFunction();
+                }
+            });
+        });
+    })
+    .catch(error => console.error(error));
+</script>
 
 
